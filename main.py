@@ -2,6 +2,7 @@ import streamlit as st
 from prediction_helper import predict  # Ensure this is correctly linked to your prediction_helper.py
 import joblib
 
+MODEL_PATH = 'artifacts/model_data.joblib'
 #Load the Model and it's components
 model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
