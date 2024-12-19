@@ -11,7 +11,7 @@ model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
 features = model_data['features']
 scaler = model_data['scaler']
-cols_to_scale = model_data['ccols_to_scale']
+cols_to_scale = model_data['cols_to_scale']
 
 
 def prepare_input(age, income, loan_amount, loan_tenure_months, avg_dpd_per_delinquency,
