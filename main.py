@@ -1,5 +1,13 @@
 import streamlit as st
 from prediction_helper import predict  # Ensure this is correctly linked to your prediction_helper.py
+import joblib
+
+#Load the Model and it's components
+model_data = joblib.load(MODEL_PATH)
+model = model_data['model']
+features = model_data['features']
+scaler = model_data['scaler']
+cols_to_scale = model_data['cols_to_scale']
 
 # Set the page configuration and title
 st.set_page_config(page_title="UNI Finance: Credit Risk Modelling", page_icon="📊")
@@ -61,4 +69,8 @@ if st.button('Calculate Risk'):
     st.write(f"Deafult Probability: {probability:.2%}")
     st.write(f"Credit Score: {credit_score}")
     st.write(f"Rating: {rating}")
+
+print("Model Coefficients:", model.coef_)
+print("Model Intercept:", model.intercept_)
+
 
