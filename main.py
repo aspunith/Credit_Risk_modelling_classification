@@ -3,7 +3,7 @@ from prediction_helper import predict  # Ensure this is correctly linked to your
 
 # Set the page configuration and title
 st.set_page_config(page_title="UNI Finance: Credit Risk Modelling", page_icon="📊")
-st.title("Lauki Finance: Credit Risk Modelling")
+st.title("UNI Finance: Credit Risk Modelling")
 
 # Create rows of three columns each
 row1 = st.columns(3)
