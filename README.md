@@ -1,4 +1,5 @@
-# Credit Risk Modelling Classification
+# Credit Risk Modelling Classification 
+## App Link: https://creditriskmodellingclassificationaspunith.streamlit.app/
 
 This project is a credit risk modeling application that predicts the probability of default, credit score, and rating for loan applicants. It uses machine learning techniques and a pre-trained model to perform these predictions.
 
